@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="click" onclick="msg()">
+    <script>
+        function msg(){
+            alert("You are a two number");
+            var a=prompt("Enter a value a=");
+            var b=prompt("Enter a value b=");
+            var a=parseInt(a);
+            var b=parseInt(b);
+            var c=a+b;
+            var v=confirm("Are U agree to add a+b");
+            if(v==true){
+                alert("You are Agree to add a+b");
+                alert("Answer of a+b =" + c);
+            }
+            else{
+                alert("Yor are Not agree to add a+b");
+            }  
+        }
+    </script>
+</body>
+</html>

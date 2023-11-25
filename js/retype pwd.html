@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="return form()">
+        <label for="npwd">New Password:</label><br>
+        <input type="password" id="npwd" name="pwd1"><br>
+        <label for="cpwd">Confirm Password:</label><br>
+        <input type="password" id="cpwd" name="pwd2"><br>
+        <input type="submit">
+    </form>
+    <script>
+        function form(){
+            var password1=document.myform.pwd1.value;
+            var password2=document.myform.pwd2.value;
+            if(password1==password2){
+                return true;
+            }
+            else{
+                alert("Password same as new and confirm password");
+            }
+        }
+    </script>
+</body>
+</html>

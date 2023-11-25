@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" method="get" onsubmit="return form()">
+    Email:<br>
+    <input type="text" name="email"><br>
+    <span id="emailloc"></span><br>
+    <input type="submit">
+</form>
+<script>
+    function form(){
+        var x=document.myform.email.value;
+        var atposition=x.indexOf("@");
+        var dotposition=x.lastIndexOf(".");
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+        document.getElementById("emailloc").innerHTML="Please enter a valid email address"
+        return false;
+        }
+    }
+</script>
+</body>
+</html>

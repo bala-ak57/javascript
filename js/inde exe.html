@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+        }
+        code{
+            font-size: 25px;
+            color: blue;
+        }
+        output{
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            padding: 15px 20px;
+        }
+        table, td, th{
+            border: 2px solid gray;
+            text-align: center;
+        }
+        th{
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        table{
+            width: 70%;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .js{
+            font-size: 30px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Increement/Decreement Exercise</h1>
+    <table>
+        <tr>
+            <th>S.no</th>
+            <th>My Answer</th>
+            <th>JS Answer</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>
+                <p>
+                   <code>
+                       var i=10;<br>
+                       var i=i++ + ++i;<br>
+                            =10 + 12=22<br> <br> <br>
+                        <output>Ans: i=22</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="one"></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>
+                <p>
+                   <code>
+                    var a=4;<br>
+                    var b=6;<br>
+                    var c=a + b + a++ + b++ + ++a + ++b;<br>
+                         =4 + 6 + 4 + 6 + 6 + 8<br>
+                         =34 <br> <br> <br>
+                        <output>Ans: c=34</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="two"></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>
+                <p>
+                   <code>
+                    var d=10;<br>
+                    var d=d++ - --d + ++d - d--;<br>
+                         =10 - 10 + 11 - 11 <br>
+                         = 0 <br> <br> <br>
+                        <output>Ans: d=0</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="three"></td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>
+                <p>
+                   <code>
+                    var e=2;<br>
+                    var f=4;<br>
+                    var g=6;<br>
+                    var h=e-- - f-- - g--;<br>
+                         = 2 - 4 - 6 <br>
+                         = -8 <br> <br> <br>
+                        <output>Ans: h= -8</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="four"></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>
+                <p>
+                   <code>
+                    var j=5;<br>
+                    var k=6;<br>
+                    var k= ---k - ++j + ++k - --j ;<br>
+                          = 5 - 6 + 6 - 5 <br>
+                          = 0 <br> <br> <br>
+                        <output>Ans: k= 0</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="five"></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>
+                <p>
+                   <code>
+                    var l=6;<br>
+                    var m=8;<br>
+                    var m= l-- - l++ + --m - ++m + --l - m-- + ++l - m++;<br>
+                          = 6 - 5 + 7 - 8 + 5 - 8 + 6 - 7<br>
+                          = 24 - 28 <br>
+                          = -4 <br> <br> <br>
+                        <output>Ans: m= -4</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="six"></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>
+                <p>
+                   <code>
+                      var o=5; <br>
+                      var n= --(o++); <br>
+                           = --(5); <br>
+                           = 4 <br> <br> <br>
+                        <output>Ans: n= 4</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="seven">Error</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>
+                <p>
+                   <code>
+                        var p=4; <br>
+                        var q=6; <br>
+                        var r= --p * --q * q-- * p--; <br>
+                             = 3 * 5 * 3 * 5 <br>
+                             = 225 <br> <br>
+                        <output>Ans: r= 225</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="eight"></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>
+                <p>
+                   <code>
+                        var s=8; <br>
+                        var s= s++ + ++s * --s - s--;<br>
+                             = 8 + 10 * 9 - 9<br>
+                             = 8 + 90 -9 = 90 - 1 <br>
+                             = 89 <br> <br> <br>
+                        <output>Ans: s= 89</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="nine"></td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>
+                <p>
+                   <code>
+                        int t= 11++; <br>
+                            t= 11 <br> <br>
+                        <output>Ans: t= 11</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="ten">Error</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>
+                <p>
+                   <code>
+                        var u= 2; <br>
+                        var v= 6; <br>
+                        var v= u++ / ++v * v-- / --u; <br>
+                             = 2 / 7 * 7 / 2 <br>
+                             =1 <br> <br> <br>
+                        <output>Ans: v= 1</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="eleven"></td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>
+                <p>
+                   <code>
+                        var x= 5; <br>
+                        var y= 8; <br>
+                        var z= 9;<br>
+                        var z= --x + y++ - z-- - --z + ++y - --x + y-- - --x; <br>
+                             = 4 + 8 - 9 - 7 + 10 - 3 + 10 - 2<br>
+                             = 32-21 = 11<br> <br> <br>
+                        <output>Ans: z= 11</output>
+                   </code>
+                </p>
+            </td>
+            <td class="js" id="twelve"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        var i=10;
+        var i=i++ + ++i;
+        document.getElementById('one').innerHTML=i;
+        var a=4;
+        var b=6;
+        var c=a + b + a++ + b++ + ++a + ++b;
+        document.getElementById('two').innerHTML=c;
+        var d=10;
+        var d=d++ - --d + ++d - d--;
+        document.getElementById('three').innerHTML=d;
+        var e=2;
+        var f=4;
+        var g=6;
+        var h=e-- - f-- - g--;
+        document.getElementById('four').innerHTML=h;
+        var j=5;
+        var k=6;
+        var k= --k - ++j + ++k - --j;
+        document.getElementById('five').innerHTML=k;
+        var l=6;
+        var m=8;
+        var m= l-- - l++ + --m - ++m + --l - m-- + ++l - m++;
+        document.getElementById('six').innerHTML=m;
+        // var o=5;
+        // var n= --(o++)
+        // document.getElementById('seven').innerHTML=n;
+        var p=4;
+        var q=6;
+        var r= --p * --q * q-- * p--;
+        document.getElementById('eight').innerHTML=r;
+        var s=8;
+        var s= s++ + ++s * --s - s--;
+        document.getElementById('nine').innerHTML=s;
+        // int t= 11++;
+        // document.getElementById('ten').innerHTML=t;
+        var u=2;
+        var v=6;
+        var v= u++ / ++v * v-- / --u;
+        document.getElementById('eleven').innerHTML=v;
+        var x=5;
+        var y=8;
+        var z=9;
+        var z= --x + y++ - z-- - --z + ++y - --x + y-- - --x;
+        document.getElementById('twelve').innerHTML=z;
+    </script>
+    
+</body>
+</html>

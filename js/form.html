@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,184,1) 58%, rgba(0,212,255,1) 100%);
+            width: 100%;
+            height: 100vh;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 30%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            border: 0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .form{
+            padding: 15px;
+        }
+        #username{
+            margin-top: 5px;
+            margin-bottom: 25px;
+            width: 150px;
+            padding: 10px 20px;
+        }
+        #email{
+            margin-top: 5px;
+            margin-bottom: 25px;
+            width: 150px;
+            padding: 10px 20px;
+        }
+        .submit{
+            padding: 10px 30px;
+            border: 2px solid red;
+            background-color: red;
+            color: white;
+            font-size: 25px;
+            border-radius: 4px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form">
+        <label for="username">User Name</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter a Username here"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter a Email hers"><br>
+        <input type="submit" class="submit" value="submit" onclick="profile()" >
+    </div>
+    </form>
+    <h1>Your username is: <span id="uvalue"></span></h1>
+    <h1>Your email is: <span id="evalue"></span></h1>
+    <script>
+        function profile(){
+       var x =document.getElementById('username').value;
+       var y =document.getElementById('email').value;
+       document.getElementById(uvalue).innerHTML=x;
+       document.getElementById(evalue).innerHTML=y;
+        }dx
+    </script>
+    
+</body>
+</html>
